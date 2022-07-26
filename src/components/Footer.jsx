@@ -28,7 +28,6 @@ export const Footer = () => {
 
 const FooterContainer = styled.div`
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -71,7 +70,6 @@ const FooterContainer = styled.div`
 
   @media (min-width: 768px) {
     background-color: #3a3a3a;
-    margin-top: 25px;
     justify-content: center;
     gap: 40px;
   }

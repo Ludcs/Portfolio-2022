@@ -30,7 +30,6 @@ export const NavText = styled.li`
   display: flex;
   justify-content: start;
   align-items: center;
-  /* padding: 8px 16px 8px 16px; */
   list-style: none;
   height: 40px;
 

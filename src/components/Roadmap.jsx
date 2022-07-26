@@ -1,19 +1,29 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export const Roadmap = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      disable: 'mobile',
+    });
+  }, []);
+
   return (
-    <RoadmapContainer>
+    <RoadmapContainer data-aos="fade-right">
       <p className="roadmap_title"> Mis estudios {'>>>'} </p>
       <p className="roadmap_description">
         Adquirí conocimientos sobre <b>HTML5</b>, <b>CSS3</b> y{' '}
         <b>JavaScript</b> en <i>Platzi</i>. Posteriormente, me adentré en{' '}
-        <b>React.js</b> tomando el curso de <i>Udemy</i> llamado "React: De cero
+        <b>React.js</b> tomando el curso en <i>Udemy</i> llamado "React: De cero
         a experto, Hooks + MERN". Y mediante documentación más videotutoriales,
         aprendí otras skills como <b>styled-components</b> y <b>Sass</b>.
         <br />
         Actualmente sigo puliendo mis habilidades mediante el desarrollo de
-        nuevos proyectos.
+        nuevos proyectos, tomando clases sobre <b>Firebase</b> y frameworks de
+        css como <b>Tailwind</b>.
       </p>
       <br />
       <br />
@@ -98,6 +108,9 @@ const RoadmapContainer = styled.div`
     @media (min-width: 768px) {
       font-size: 20px;
     }
+    @media (min-width: 1200px) {
+      font-size: 22px;
+    }
   }
 
   #prox_description {
@@ -123,6 +136,7 @@ const RoadmapContainer = styled.div`
     @media (min-width: 1200px) {
       font-weight: 400;
       line-height: 35px;
+      font-size: 20px;
     }
   }
 `;

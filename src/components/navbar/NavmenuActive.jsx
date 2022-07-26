@@ -1,34 +1,31 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import * as AiIcons from 'react-icons/ai';
 import {SidebarData} from './SidebarData';
 import {Link} from 'react-scroll';
-import './Navbar.css';
 import {AnchorBars} from './Navbar';
 import {NavText} from './SidebarData';
 
-export const NavmenuActive = ({noShowSidebar}) => {
+export const NavmenuActive = ({sidebar, noShowSidebar}) => {
   return (
-    <>
-      <NavbarMenu>
-        <Ul onClick={noShowSidebar}>
-          <Li>
-            <AnchorBars href="#">
-              <AiIcons.AiOutlineClose onClick={noShowSidebar} />
-            </AnchorBars>
-          </Li>
-          {SidebarData.map((item, index) => {
-            return (
-              <NavText key={index}>
-                <Link to={item.to} smooth={true} duration={1000}>
-                  {item.icon}
-                  <Span> {item.title} </Span>
-                </Link>
-              </NavText>
-            );
-          })}
-        </Ul>
-      </NavbarMenu>
-    </>
+    <NavbarMenu sidebar={sidebar}>
+      <Ul onClick={noShowSidebar}>
+        <Li>
+          <AnchorBars href="#">
+            <AiIcons.AiOutlineClose onClick={noShowSidebar} />
+          </AnchorBars>
+        </Li>
+        {SidebarData.map((item, index) => {
+          return (
+            <NavText key={index}>
+              <Link to={item.to} smooth={true} duration={1000}>
+                {item.icon}
+                <Span> {item.title} </Span>
+              </Link>
+            </NavText>
+          );
+        })}
+      </Ul>
+    </NavbarMenu>
   );
 };
 
@@ -43,18 +40,12 @@ const NavbarMenu = styled.nav`
   top: 20px;
   left: 0;
   z-index: 1;
-  transition: 850ms;
-
-  /* ${(props) =>
-    props.showSidebar &&
-    css`
-      transition: all;
-    `} */
+  transition: ${(props) => props.sidebar && 'transition: 850ms'};
 
   @media (min-width: 1200px) {
     margin-left: 150px;
     top: 30px;
-    height: 85.5vh;
+    height: 93.4vh;
   }
 `;
 

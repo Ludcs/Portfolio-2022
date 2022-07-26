@@ -1,20 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 import Avatar from '../assets/avatar_web_dev.svg';
-import 'animate.css';
+import Typewriter from 'typewriter-effect';
 
 export const Home = ({noShowSidebar}) => {
-  const pIn = '<p>';
-  const pOut = '</p>';
-
   return (
     <HomeContainer onClick={noShowSidebar}>
       <h1>
         Luciano <br /> De Carolis
       </h1>
-      <p>
-        {pIn} Desarrollador Web Frontend {pOut}
-      </p>
+      <span>
+        <Typewriter
+          options={{
+            strings: ['Desarrollador Web Frontend'],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </span>
       <img className="avatar" src={Avatar} alt="Avatar" />
     </HomeContainer>
   );
@@ -29,7 +32,7 @@ const HomeContainer = styled.div`
   min-height: 550px;
 
   @media (min-width: 1200px) {
-    height: 80vh;
+    height: 88vh;
   }
 
   h1 {
@@ -44,15 +47,12 @@ const HomeContainer = styled.div`
     }
   }
 
-  p {
-    margin-left: 10px;
-    margin-right: 10px;
+  span {
     font-size: 18px;
     font-weight: 500;
     color: #ffffff;
     text-align: center;
     margin-top: 10px;
-    letter-spacing: 1.2px;
 
     @media (min-width: 768px) {
       font-size: 27px;

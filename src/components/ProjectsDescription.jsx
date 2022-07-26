@@ -1,11 +1,19 @@
 import styled from 'styled-components';
-/* import {PDescription, IconsContainer, Icon} from './Projects'; */
 import PlayDemoIcon from '../assets/svgs/playdemo.svg';
 import GitHubIcon from '../assets/svgs/github.svg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import {useEffect} from 'react';
 
 export const ProjectsDescription = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <Div>
+    <Div data-aos="fade-left">
       <p id="div_title_description">Descripción {'>>>'}</p>
       <Project1Container768>
         <PDescription768>
@@ -36,11 +44,11 @@ export const ProjectsDescription = () => {
           Tecnologias utilizadas: <span>React + styled-components</span>.
         </PDescription768>
         <IconsContainer768>
-          <a href="" target="_blank">
+          <a href="https://www.youtube.com/watch?v=71KoNFdTCxk" target="_blank">
             <Icon768 src={PlayDemoIcon} alt="Play Demo 2" />
             <p>DEMO</p>
           </a>
-          <a href="" target="_blank">
+          <a href="https://github.com/Ludcs/Hearings-Date-App" target="_blank">
             <Icon768 src={GitHubIcon} alt="Github Repositorio 2" />
             <p>REPO</p>
           </a>
@@ -69,7 +77,7 @@ export const ProjectsDescription = () => {
         <PDescription768>
           <span>Portfolio Web Responsive</span> con vista para mobile, tablet y
           desktop. Tecnologias utilizadas:{' '}
-          <span>React + styled-components</span>.
+          <span>React + Vite + styled-components</span>.
         </PDescription768>
         <IconsContainer768>
           <a href="" target="_blank">

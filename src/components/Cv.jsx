@@ -1,14 +1,23 @@
 import styled from 'styled-components';
 import CvIcon from '../assets/svgs/cvicon.svg';
 import CvPdf from '../assets/cv/Luciano-De-Carolis-CV.pdf';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import {useEffect} from 'react';
 
 export const Cv = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <CvContainer>
+    <CvContainer data-aos="fade-right">
       <p>Descarga mi CV {'>>>'}</p>
       <span>Trabajemos Juntos!</span>
       <A href={CvPdf} download="Luciano-De-Carolis-CV">
-        <Img src={CvIcon} alt="" />
+        <Img src={CvIcon} alt="Descagar Curriculum" />
       </A>
     </CvContainer>
   );

@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export const About = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      disable: 'mobile',
+    });
+  }, []);
+
   return (
-    <AboutContainer id="sobreMi">
+    <AboutContainer id="sobreMi" data-aos="fade-up">
       <p className="title_hello">¡Bienvenidos!</p>
       <br />
       <p id="p1">
@@ -14,12 +23,13 @@ export const About = () => {
         Nacional del Litoral.
       </p>
       <p id="p3">
-        💻 Fan de la <span>tecnología</span>, la <span>creación</span>, el{' '}
-        <span>diseño</span> y la <span>comunicación</span>.
+        💻 Fan de la <span>tecnología</span>, el <span>diseño</span> y la{' '}
+        <span>comunicación</span>.
       </p>
       <p id="p4">
-        👀 Siempre <span>curioso</span>! Es esa curiosidad mi motor para
-        aprender y crear.
+        📢 Estoy en búsqueda de <span>mi primer experiencia laboral en IT</span>{' '}
+        para continuar aprendiendo nuevas habilidades y tecnologías web que
+        mejoren mi desarrollo profesional.
       </p>
     </AboutContainer>
   );
@@ -37,6 +47,11 @@ const AboutContainer = styled.div`
   @media (min-width: 600px) {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @media (min-width: 1800px) {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .title_hello {
@@ -60,7 +75,6 @@ const AboutContainer = styled.div`
   #p4 {
     text-align: justify;
     color: #3a3a3a;
-    line-height: 23px;
     font-weight: 300;
     margin-bottom: 20px;
 
@@ -77,6 +91,10 @@ const AboutContainer = styled.div`
     }
     @media (min-width: 1500px) {
       font-size: 20px;
+
+      &#p4 {
+        line-height: 25px;
+      }
     }
   }
 

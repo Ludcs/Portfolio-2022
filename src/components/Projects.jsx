@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import ImgProject1 from '../assets/img_project_1.png';
-import ImgProject2 from '../assets/img_project_2.png';
+import ImgProject2 from '../assets/img_project_2.jpg';
 import ImgProject3 from '../assets/img_project_3.png';
 import ImgProject4 from '../assets/img_project_4.png';
 import PlayDemoIcon from '../assets/svgs/playdemo.svg';
@@ -42,11 +42,17 @@ export const Projects = () => {
             Tecnologias utilizadas: <span>React + styled-components</span>.
           </PDescription>
           <IconsContainer>
-            <a href="" target="_blank">
+            <a
+              href="https://www.youtube.com/watch?v=71KoNFdTCxk"
+              target="_blank"
+            >
               <Icon src={PlayDemoIcon} alt="Play Demo 2" />
               <p>DEMO</p>
             </a>
-            <a href="" target="_blank">
+            <a
+              href="https://github.com/Ludcs/Hearings-Date-App"
+              target="_blank"
+            >
               <Icon src={GitHubIcon} alt="Github Repositorio 2" />
               <p>REPO</p>
             </a>
@@ -77,7 +83,7 @@ export const Projects = () => {
           <PDescription>
             <span>Portfolio Web Responsive</span> con vista para mobile, tablet
             y desktop. Tecnologias utilizadas:{' '}
-            <span>React + styled-components</span>.
+            <span>React + Vite + styled-components</span>.
           </PDescription>
           <IconsContainer>
             <a href="" target="_blank">
@@ -146,7 +152,6 @@ const Project1Container = styled.div`
   margin: auto;
   margin: 20px 0px 30px 0px;
   padding: 0px 20px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
 `;
 
 const Project2Container = styled.div`
@@ -156,8 +161,6 @@ const Project2Container = styled.div`
   margin: auto;
   margin: 20px 0px 30px 0px;
   padding: 0px 20px;
-
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
 `;
 
 const Project3Container = styled.div`
@@ -167,7 +170,6 @@ const Project3Container = styled.div`
   margin: auto;
   margin: 20px 0px 30px 0px;
   padding: 0px 20px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
 `;
 
 const Project4Container = styled.div`
@@ -177,13 +179,14 @@ const Project4Container = styled.div`
   margin: auto;
   margin: 20px 0px 30px 0px;
   padding: 0px 20px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
 `;
 
 const ImgProject = styled.img`
   object-fit: cover;
   object-position: top;
   filter: grayscale();
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
 
   &:hover {
     filter: none;
@@ -201,7 +204,7 @@ const PDescription = styled.p`
   font-weight: 300;
   text-align: justify;
   color: #3a3a3a;
-  margin: 15px 0px;
+  margin: 35px 0px;
 
   span {
     margin-left: 0px;

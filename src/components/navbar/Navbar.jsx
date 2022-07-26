@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import * as FaIcons from 'react-icons/fa';
-import '../navbar/Navbar.css';
 import {IconContext} from 'react-icons';
 import {NavmenuActive} from './NavmenuActive';
 
@@ -26,7 +25,9 @@ export const Navbar = ({sidebar, showSidebar, noShowSidebar}) => {
           <AnchorBars href="#">
             <FaIcons.FaBars onClick={showSidebar} />
           </AnchorBars>
-          {sidebar && <NavmenuActive noShowSidebar={noShowSidebar} />}
+          {sidebar && (
+            <NavmenuActive sidebar={sidebar} noShowSidebar={noShowSidebar} />
+          )}
         </NavbarContainer>
       </IconContext.Provider>
     </>
