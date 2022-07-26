@@ -32,12 +32,12 @@ Además se utilizaron las siguientes **librerias**:
 
 ![Previsualización de mi Portfolio 2022](./src/assets/img_project_4.png)
 
-## Link:
+## Visitar:
 
-[]()
+[Portfolio Luciano De Carolis](https://vercel.com/ludcs/luciano-de-carolis)
 
 ---
 
 ## Mi LinkedIn:
 
-[]()
+[Ver Perfil](https://www.linkedin.com/in/luciano-de-carolis-36a751148/)
