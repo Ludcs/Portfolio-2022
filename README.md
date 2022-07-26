@@ -34,7 +34,7 @@ Además se utilizaron las siguientes **librerias**:
 
 ## Visitar:
 
-[Portfolio Luciano De Carolis](https://vercel.com/ludcs/luciano-de-carolis)
+[Portfolio Luciano De Carolis](https://luciano-de-carolis.vercel.app/)
 
 ---
 
