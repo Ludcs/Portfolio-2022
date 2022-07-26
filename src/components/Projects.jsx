@@ -22,14 +22,14 @@ export const Projects = () => {
           <IconsContainer>
             <a href="https://crudstarwarsreact.herokuapp.com/" target="_blank">
               <Icon src={PlayDemoIcon} alt="Play Demo 1" />
-              <p>DEMO</p>
+              <p>VISITAR</p>
             </a>
             <a
               href="https://github.com/Ludcs/CRUD-Star-Wars-react"
               target="_blank"
             >
               <Icon src={GitHubIcon} alt="Github Repositorio 1" />
-              <p>REPO</p>
+              <p>REPOSITORIO</p>
             </a>
           </IconsContainer>
         </Project1Container>
@@ -47,14 +47,14 @@ export const Projects = () => {
               target="_blank"
             >
               <Icon src={PlayDemoIcon} alt="Play Demo 2" />
-              <p>DEMO</p>
+              <p>VISITAR</p>
             </a>
             <a
               href="https://github.com/Ludcs/Hearings-Date-App"
               target="_blank"
             >
               <Icon src={GitHubIcon} alt="Github Repositorio 2" />
-              <p>REPO</p>
+              <p>REPOSITORIO</p>
             </a>
           </IconsContainer>
         </Project2Container>
@@ -69,11 +69,11 @@ export const Projects = () => {
           <IconsContainer>
             <a href="https://zen-app-three.vercel.app/" target="_blank">
               <Icon src={PlayDemoIcon} alt="Play Demo 3" />
-              <p>DEMO</p>
+              <p>VISITAR</p>
             </a>
             <a href="https://github.com/Ludcs/Zen-App" target="_blank">
               <Icon src={GitHubIcon} alt="Github Repositorio 3" />
-              <p>REPO</p>
+              <p>REPOSITORIO</p>
             </a>
           </IconsContainer>
         </Project3Container>
@@ -86,9 +86,9 @@ export const Projects = () => {
             <span>React + Vite + styled-components</span>.
           </PDescription>
           <IconsContainer>
-            <a href="" target="_blank">
-              <Icon src={GitHubIcon} alt="Github Repositorio 3" />
-              <p>REPO</p>
+            <a href="https://github.com/Ludcs/Portfolio-2022" target="_blank">
+              <Icon src={GitHubIcon} alt="Github Repositorio 4" />
+              <p>REPOSITORIO</p>
             </a>
           </IconsContainer>
         </Project4Container>
