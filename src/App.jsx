@@ -59,7 +59,8 @@ const GlobalStyles = createGlobalStyle`
 body {
   background-color: #ffffff;
   padding: 20px;
-  min-width: 375px;
+  overflow-x: hidden;
+  min-width: 360px; 
 
   @media (min-width: 1200px) {
     padding: 0px;

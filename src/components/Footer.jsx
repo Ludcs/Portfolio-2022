@@ -30,7 +30,7 @@ const FooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   margin: auto;
   padding: 5px;
   width: 100%;
