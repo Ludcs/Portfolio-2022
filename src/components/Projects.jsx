@@ -15,8 +15,8 @@ export const Projects = () => {
           <ImgProject src={ImgProject1} alt="Proyecto 1" />
 
           <PDescription>
-            <span>CRUD</span> con personajes de Star Wars haciendo uso de la API
-            REST de JSON SERVER. Tecnologias utilizadas:{' '}
+            <span>CRUD</span> con los personajes de Star Wars haciendo uso de la{' '}
+            <i>API REST de JSON SERVER</i>. Tecnologias utilizadas:{' '}
             <span>React + styled-components</span>.
           </PDescription>
           <IconsContainer>
@@ -37,9 +37,9 @@ export const Projects = () => {
         <Project2Container>
           <ImgProject src={ImgProject2} alt="Proyecto 2" />
           <PDescription>
-            <span>Peticiones a una API</span> con manejo de{' '}
-            <span>DatePickers</span> para mostrar audiencias de fechas pasadas.
-            Tecnologias utilizadas: <span>React + styled-components</span>.
+            <span>Peticiones a una API</span> con manejo de <i>DatePickers</i>{' '}
+            para mostrar audiencias de fechas pasadas. Tecnologias utilizadas:{' '}
+            <span>React + styled-components</span>.
           </PDescription>
           <IconsContainer>
             <a
@@ -63,7 +63,7 @@ export const Projects = () => {
           <ImgProject src={ImgProject3} alt="Proyecto 3" />
           <PDescription>
             <span>Peticiones a una API</span> para mostrar frases del estilo{' '}
-            <span>Zen</span>, agregar frases propias y poder borrarlas desde un
+            <i>Zen</i>, agregar frases propias y poder borrarlas desde un
             listado. Tecnologias utilizadas: <span>React + CSS3</span>.
           </PDescription>
           <IconsContainer>
@@ -81,8 +81,8 @@ export const Projects = () => {
         <Project4Container>
           <ImgProject id="img4" src={ImgProject4} alt="Proyecto 4" />
           <PDescription>
-            <span>Portfolio Web Responsive</span> con vista para mobile, tablet
-            y desktop. Tecnologias utilizadas:{' '}
+            <span>Portfolio Web Responsive</span> con vista para{' '}
+            <i>mobile, tablet y desktop</i>. Tecnologias utilizadas:{' '}
             <span>React + Vite + styled-components</span>.
           </PDescription>
           <IconsContainer>

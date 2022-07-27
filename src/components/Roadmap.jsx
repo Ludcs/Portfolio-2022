@@ -20,16 +20,15 @@ export const Roadmap = () => {
         <b>React.js</b> tomando el curso en <i>Udemy</i> llamado "React: De cero
         a experto, Hooks + MERN". Y mediante documentación más videotutoriales,
         aprendí otras skills como <b>styled-components</b> y <b>Sass</b>.
-        <br />
-        Actualmente sigo puliendo mis habilidades mediante el desarrollo de
-        nuevos proyectos, tomando clases sobre <b>Firebase</b> y frameworks de
-        css como <b>Tailwind</b>.
       </p>
       <br />
       <br />
-      <p id="prox">Próximamente...</p>
+      <p id="prox">Actualmente...</p>
       <p id="prox_description">
-        Me interesa estudiar <b>TypeScript</b> y <b>Next.js!</b>
+        Continúo puliendo mis habilidades mediante el desarrollo de nuevos
+        proyectos y estoy terminando mis clases sobre <b>Firebase</b> y{' '}
+        <b>Tailwind</b>. <br /> Y además, comenzaré a estudiar <b>TypeScript</b>{' '}
+        y <b>Next.js!</b>
       </p>
     </RoadmapContainer>
   );
