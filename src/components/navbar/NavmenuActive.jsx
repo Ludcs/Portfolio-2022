@@ -45,7 +45,7 @@ const NavbarMenu = styled.nav`
   @media (min-width: 1200px) {
     margin-left: 150px;
     top: 30px;
-    height: 93.4vh;
+    height: 93.8vh;
   }
 `;
 
