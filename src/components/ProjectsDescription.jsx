@@ -41,7 +41,7 @@ export const ProjectsDescription = () => {
         <PDescription768>
           <span>Peticiones a una API</span> con manejo de <i>DatePickers</i>{' '}
           para mostrar audiencias de fechas pasadas. Tecnologias utilizadas:{' '}
-          <span>React + styled-components</span>.
+          <span>React + styled-components + librerias</span>.
         </PDescription768>
         <IconsContainer768>
           <a href="https://www.youtube.com/watch?v=71KoNFdTCxk" target="_blank">
@@ -73,11 +73,31 @@ export const ProjectsDescription = () => {
         </IconsContainer768>
       </Project3Container768>
       <hr id="hr3" />
+      <Project3Container768>
+        <PDescription768>
+          <span>Adviency Challenge Responsive</span>. Los usuarios pueden{' '}
+          <i>agregar</i>, <i>editar</i>, <i>duplicar</i> y <i>eliminar</i>{' '}
+          regalos. Los datos persisten por el uso de <i>localStorage</i> y dicha
+          lista se puede <i>imprimir</i>. Tecnologias utilizadas:{' '}
+          <span>React + styled-components + librerias</span>.
+        </PDescription768>
+        <IconsContainer768>
+          <a href="https://adviency-luciano-dc.vercel.app/" target="_blank">
+            <Icon768 src={PlayDemoIcon} alt="Play Demo 4" />
+            <p>VISITAR</p>
+          </a>
+          <a href="https://github.com/Ludcs/adviency" target="_blank">
+            <Icon768 src={GitHubIcon} alt="Github Repositorio 3" />
+            <p>REPOSITORIO</p>
+          </a>
+        </IconsContainer768>
+      </Project3Container768>
+      <hr id="hr3" />
       <Project4Container768>
         <PDescription768>
           <span>Portfolio Web Responsive</span> con vista para{' '}
           <i>mobile, tablet y desktop</i>. Tecnologias utilizadas:{' '}
-          <span>React + Vite + styled-components</span>.
+          <span>React + Vite + styled-components + librerias</span>.
         </PDescription768>
         <IconsContainer768>
           <a href="https://github.com/Ludcs/Portfolio-2022" target="_blank">

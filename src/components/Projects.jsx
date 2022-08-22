@@ -3,6 +3,7 @@ import ImgProject1 from '../assets/img_project_1.png';
 import ImgProject2 from '../assets/img_project_2.jpg';
 import ImgProject3 from '../assets/img_project_3.png';
 import ImgProject4 from '../assets/img_project_4.png';
+import ImgProject5 from '../assets/img_project_5.jpg';
 import PlayDemoIcon from '../assets/svgs/playdemo.svg';
 import GitHubIcon from '../assets/svgs/github.svg';
 
@@ -78,8 +79,29 @@ export const Projects = () => {
           </IconsContainer>
         </Project3Container>
 
+        <Project3Container>
+          <ImgProject src={ImgProject5} alt="Proyecto 4" />
+          <PDescription>
+            <span>Adviency Challenge Responsive</span>. Los usuarios pueden{' '}
+            <i>agregar</i>, <i>editar</i>, <i>duplicar</i> y <i>eliminar</i>{' '}
+            regalos. Los datos persisten por el uso de <i>localStorage</i> y
+            dicha lista se puede <i>imprimir</i>. Tecnologias utilizadas:{' '}
+            <span>React + styled-components + librerias</span>.
+          </PDescription>
+          <IconsContainer>
+            <a href="https://adviency-luciano-dc.vercel.app/" target="_blank">
+              <Icon src={PlayDemoIcon} alt="Play Demo 3" />
+              <p>VISITAR</p>
+            </a>
+            <a href="https://github.com/Ludcs/adviency" target="_blank">
+              <Icon src={GitHubIcon} alt="Github Repositorio 3" />
+              <p>REPOSITORIO</p>
+            </a>
+          </IconsContainer>
+        </Project3Container>
+
         <Project4Container>
-          <ImgProject id="img4" src={ImgProject4} alt="Proyecto 4" />
+          <ImgProject id="img4" src={ImgProject4} alt="Proyecto 5" />
           <PDescription>
             <span>Portfolio Web Responsive</span> con vista para{' '}
             <i>mobile, tablet y desktop</i>. Tecnologias utilizadas:{' '}
