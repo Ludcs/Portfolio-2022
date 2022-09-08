@@ -32,7 +32,7 @@ const HomeContainer = styled.div`
   min-height: 550px;
 
   @media (min-width: 1200px) {
-    height: 88vh;
+    height: 800px;
   }
 
   h1 {

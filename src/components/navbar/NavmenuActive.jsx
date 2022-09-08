@@ -39,13 +39,13 @@ const NavbarMenu = styled.nav`
   position: fixed;
   top: 20px;
   left: 0;
-  z-index: 1;
+  z-index: 99;
   transition: ${(props) => props.sidebar && 'transition: 850ms'};
 
   @media (min-width: 1200px) {
     margin-left: 150px;
     top: 30px;
-    height: 93.4vh;
+    height: 850px;
   }
 `;
 

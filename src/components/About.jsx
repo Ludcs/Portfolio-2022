@@ -43,6 +43,7 @@ const AboutContainer = styled.div`
   min-height: 300px;
   padding: 60px 20px 60px 20px;
   background-color: #fbfbfb;
+  position: relative;
 
   @media (min-width: 600px) {
     padding-left: 30px;
