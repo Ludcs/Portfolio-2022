@@ -15,7 +15,7 @@ export const Projects = () => {
       <ProjectsContainer id="proyectos">
         <PTitle>PROYECTOS</PTitle>
 
-        <Project0Container>
+        <Project5Container>
           <ImgProject src={ImgProject0} alt="Proyecto 0" />
 
           <PDescription>
@@ -26,7 +26,7 @@ export const Projects = () => {
             <span>Vite + React + Chakra UI</span>.
           </PDescription>
           <IconsContainer>
-            <a href="https://carrito-simple-ludc.vercel.app" target="_blank">
+            <a href="https://carrito-simple-ludc.vercel.app/" target="_blank">
               <Icon src={PlayDemoIcon} alt="Play Demo 1" />
               <p>VISITAR</p>
             </a>
@@ -35,9 +35,9 @@ export const Projects = () => {
               <p>REPOSITORIO</p>
             </a>
           </IconsContainer>
-        </Project0Container>
+        </Project5Container>
 
-        <Project0Container>
+        <Project01Container>
           <ImgProject src={ImgProject01} alt="Proyecto 01" />
 
           <PDescription>
@@ -59,7 +59,7 @@ export const Projects = () => {
               <p>REPOSITORIO</p>
             </a>
           </IconsContainer>
-        </Project0Container>
+        </Project01Container>
 
         <Project1Container>
           <ImgProject src={ImgProject1} alt="Proyecto 1" />
@@ -216,12 +216,21 @@ const PTitle = styled.p`
   }
 `;
 
-const Project0Container = styled.div`
+const Project5Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: auto;
   margin: 30px 0px 30px 0px;
+  padding: 0px 20px;
+`;
+
+const Project01Container = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin: 20px 0px 30px 0px;
   padding: 0px 20px;
 `;
 

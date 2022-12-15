@@ -16,7 +16,7 @@ export const ProjectsDescription = () => {
     <Div data-aos="fade-left">
       <p id="div_title_description">Descripción {'>>>'}</p>
 
-      <Project0Container768>
+      <Project5Container768>
         <PDescription768>
           <span>Carrito de compra para E-Commerce.</span> Proyecto para poner en
           práctica la lógica a la hora de programar un carrito de compra. Se
@@ -26,19 +26,16 @@ export const ProjectsDescription = () => {
         </PDescription768>
 
         <IconsContainer768>
-          <a href="https://sunnyside-dun.vercel.app" target="_blank">
+          <a href="https://carrito-simple-ludc.vercel.app/" target="_blank">
             <Icon768 src={PlayDemoIcon} alt="Play Demo 1" />
             <p>VISITAR</p>
           </a>
-          <a
-            href="https://github.com/Ludcs/ChakraUi-primer-practica"
-            target="_blank"
-          >
+          <a href="https://github.com/Ludcs/carrito-simple" target="_blank">
             <Icon768 src={GitHubIcon} alt="Github Repositorio 1" />
             <p>REPOSITORIO</p>
           </a>
         </IconsContainer768>
-      </Project0Container768>
+      </Project5Container768>
       <hr id="hr0" />
 
       <Project01Container768>
@@ -51,14 +48,14 @@ export const ProjectsDescription = () => {
 
         <IconsContainer768>
           <a href="https://sunnyside-dun.vercel.app" target="_blank">
-            <Icon768 src={PlayDemoIcon} alt="Play Demo 1" />
+            <Icon768 src={PlayDemoIcon} alt="Play Demo 2" />
             <p>VISITAR</p>
           </a>
           <a
             href="https://github.com/Ludcs/ChakraUi-primer-practica"
             target="_blank"
           >
-            <Icon768 src={GitHubIcon} alt="Github Repositorio 1" />
+            <Icon768 src={GitHubIcon} alt="Github Repositorio 2" />
             <p>REPOSITORIO</p>
           </a>
         </IconsContainer768>
@@ -74,14 +71,14 @@ export const ProjectsDescription = () => {
 
         <IconsContainer768>
           <a href="https://crudstarwarsreact.herokuapp.com/" target="_blank">
-            <Icon768 src={PlayDemoIcon} alt="Play Demo 1" />
+            <Icon768 src={PlayDemoIcon} alt="Play Demo 3" />
             <p>VISITAR</p>
           </a>
           <a
             href="https://github.com/Ludcs/CRUD-Star-Wars-react"
             target="_blank"
           >
-            <Icon768 src={GitHubIcon} alt="Github Repositorio 1" />
+            <Icon768 src={GitHubIcon} alt="Github Repositorio 3" />
             <p>REPOSITORIO</p>
           </a>
         </IconsContainer768>
@@ -96,11 +93,11 @@ export const ProjectsDescription = () => {
         </PDescription768>
         <IconsContainer768>
           <a href="https://www.youtube.com/watch?v=71KoNFdTCxk" target="_blank">
-            <Icon768 src={PlayDemoIcon} alt="Play Demo 2" />
+            <Icon768 src={PlayDemoIcon} alt="Play Demo 4" />
             <p>VISITAR</p>
           </a>
           <a href="https://github.com/Ludcs/Hearings-Date-App" target="_blank">
-            <Icon768 src={GitHubIcon} alt="Github Repositorio 2" />
+            <Icon768 src={GitHubIcon} alt="Github Repositorio 4" />
             <p>REPOSITORIO</p>
           </a>
         </IconsContainer768>
@@ -115,11 +112,11 @@ export const ProjectsDescription = () => {
         </PDescription768>
         <IconsContainer768>
           <a href="https://zen-app-three.vercel.app/" target="_blank">
-            <Icon768 src={PlayDemoIcon} alt="Play Demo 3" />
+            <Icon768 src={PlayDemoIcon} alt="Play Demo 5" />
             <p>VISITAR</p>
           </a>
           <a href="https://github.com/Ludcs/Zen-App" target="_blank">
-            <Icon768 src={GitHubIcon} alt="Github Repositorio 3" />
+            <Icon768 src={GitHubIcon} alt="Github Repositorio 5" />
             <p>REPOSITORIO</p>
           </a>
         </IconsContainer768>
@@ -136,11 +133,11 @@ export const ProjectsDescription = () => {
         </PDescription768>
         <IconsContainer768>
           <a href="https://adviency-luciano-dc.vercel.app/" target="_blank">
-            <Icon768 src={PlayDemoIcon} alt="Play Demo 4" />
+            <Icon768 src={PlayDemoIcon} alt="Play Demo 6" />
             <p>VISITAR</p>
           </a>
           <a href="https://github.com/Ludcs/adviency" target="_blank">
-            <Icon768 src={GitHubIcon} alt="Github Repositorio 3" />
+            <Icon768 src={GitHubIcon} alt="Github Repositorio 6" />
             <p>REPOSITORIO</p>
           </a>
         </IconsContainer768>
@@ -155,7 +152,7 @@ export const ProjectsDescription = () => {
         </PDescription768>
         <IconsContainer768>
           <a href="https://github.com/Ludcs/Portfolio-2022" target="_blank">
-            <Icon768 src={GitHubIcon} alt="Github Repositorio 4" />
+            <Icon768 src={GitHubIcon} alt="Github Repositorio 7" />
             <p>REPOSITORIO</p>
           </a>
         </IconsContainer768>
@@ -258,7 +255,7 @@ const Div = styled.div`
   }
 `;
 
-const Project0Container768 = styled.div`
+const Project5Container768 = styled.div`
   @media (min-width: 768px) {
     width: 100%;
     display: flex;
