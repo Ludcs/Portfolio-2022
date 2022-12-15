@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import ImgProject0 from '../assets/img_project_0.jpg';
+import ImgProject01 from '../assets/img_project_01.jpg';
 import ImgProject1 from '../assets/img_project_1.png';
 import ImgProject2 from '../assets/img_project_2.jpg';
 import ImgProject3 from '../assets/img_project_3.png';
@@ -12,6 +14,53 @@ export const Projects = () => {
     <>
       <ProjectsContainer id="proyectos">
         <PTitle>PROYECTOS</PTitle>
+
+        <Project0Container>
+          <ImgProject src={ImgProject0} alt="Proyecto 0" />
+
+          <PDescription>
+            <span>Carrito de compra para E-Commerce.</span> Proyecto para poner
+            en práctica la lógica a la hora de programar un carrito de compra.
+            Se puede buscar una estampita en particular y se usa la
+            funcionalidad <i>debounce.</i> Tecnologias utilizadas:{' '}
+            <span>Vite + React + Chakra UI</span>.
+          </PDescription>
+          <IconsContainer>
+            <a href="https://carrito-simple-ludc.vercel.app" target="_blank">
+              <Icon src={PlayDemoIcon} alt="Play Demo 1" />
+              <p>VISITAR</p>
+            </a>
+            <a href="https://github.com/Ludcs/carrito-simple" target="_blank">
+              <Icon src={GitHubIcon} alt="Github Repositorio 1" />
+              <p>REPOSITORIO</p>
+            </a>
+          </IconsContainer>
+        </Project0Container>
+
+        <Project0Container>
+          <ImgProject src={ImgProject01} alt="Proyecto 01" />
+
+          <PDescription>
+            <span>Maquetado de Landing Page.</span> Desafío de{' '}
+            <i>Frontend Mentor</i> para poner en práctica las bases de{' '}
+            <i>Chakra UI</i>. Diseño responsive para mobile y desktop.
+            Tecnologias utilizadas: <span>Vite + Chakra UI</span>.
+          </PDescription>
+          <IconsContainer>
+            <a href="https://sunnyside-dun.vercel.app" target="_blank">
+              <Icon src={PlayDemoIcon} alt="Play Demo 1" />
+              <p>VISITAR</p>
+            </a>
+            <a
+              href="https://github.com/Ludcs/ChakraUi-primer-practica"
+              target="_blank"
+            >
+              <Icon src={GitHubIcon} alt="Github Repositorio 1" />
+              <p>REPOSITORIO</p>
+            </a>
+          </IconsContainer>
+        </Project0Container>
+
         <Project1Container>
           <ImgProject src={ImgProject1} alt="Proyecto 1" />
 
@@ -165,6 +214,15 @@ const PTitle = styled.p`
   @media (min-width: 1200px) {
     height: 65px;
   }
+`;
+
+const Project0Container = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin: 30px 0px 30px 0px;
+  padding: 0px 20px;
 `;
 
 const Project1Container = styled.div`

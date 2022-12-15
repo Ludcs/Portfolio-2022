@@ -15,6 +15,56 @@ export const ProjectsDescription = () => {
   return (
     <Div data-aos="fade-left">
       <p id="div_title_description">Descripción {'>>>'}</p>
+
+      <Project0Container768>
+        <PDescription768>
+          <span>Carrito de compra para E-Commerce.</span> Proyecto para poner en
+          práctica la lógica a la hora de programar un carrito de compra. Se
+          puede buscar una estampita en particular y se usa la funcionalidad{' '}
+          <i>debounce.</i> Tecnologias utilizadas:{' '}
+          <span>Vite + React + Chakra UI</span>.
+        </PDescription768>
+
+        <IconsContainer768>
+          <a href="https://sunnyside-dun.vercel.app" target="_blank">
+            <Icon768 src={PlayDemoIcon} alt="Play Demo 1" />
+            <p>VISITAR</p>
+          </a>
+          <a
+            href="https://github.com/Ludcs/ChakraUi-primer-practica"
+            target="_blank"
+          >
+            <Icon768 src={GitHubIcon} alt="Github Repositorio 1" />
+            <p>REPOSITORIO</p>
+          </a>
+        </IconsContainer768>
+      </Project0Container768>
+      <hr id="hr0" />
+
+      <Project01Container768>
+        <PDescription768>
+          <span>Maquetado de Landing Page.</span> Desafío de{' '}
+          <i>Frontend Mentor</i> para poner en práctica las bases de{' '}
+          <i>Chakra UI</i>. Diseño responsive para mobile y desktop. Tecnologias
+          utilizadas: <span>Vite + Chakra UI</span>.
+        </PDescription768>
+
+        <IconsContainer768>
+          <a href="https://sunnyside-dun.vercel.app" target="_blank">
+            <Icon768 src={PlayDemoIcon} alt="Play Demo 1" />
+            <p>VISITAR</p>
+          </a>
+          <a
+            href="https://github.com/Ludcs/ChakraUi-primer-practica"
+            target="_blank"
+          >
+            <Icon768 src={GitHubIcon} alt="Github Repositorio 1" />
+            <p>REPOSITORIO</p>
+          </a>
+        </IconsContainer768>
+      </Project01Container768>
+      <hr id="hr01" />
+
       <Project1Container768>
         <PDescription768>
           <span>CRUD</span> con los personajes de Star Wars haciendo uso de la{' '}
@@ -37,6 +87,7 @@ export const ProjectsDescription = () => {
         </IconsContainer768>
       </Project1Container768>
       <hr id="hr1" />
+
       <Project2Container768>
         <PDescription768>
           <span>Peticiones a una API</span> con manejo de <i>DatePickers</i>{' '}
@@ -55,6 +106,7 @@ export const ProjectsDescription = () => {
         </IconsContainer768>
       </Project2Container768>
       <hr id="hr2" />
+
       <Project3Container768>
         <PDescription768>
           <span>Peticiones a una API</span> para mostrar frases del estilo{' '}
@@ -73,6 +125,7 @@ export const ProjectsDescription = () => {
         </IconsContainer768>
       </Project3Container768>
       <hr id="hr3" />
+
       <Project3Container768>
         <PDescription768>
           <span>Adviency Challenge Responsive</span>. Los usuarios pueden{' '}
@@ -92,7 +145,8 @@ export const ProjectsDescription = () => {
           </a>
         </IconsContainer768>
       </Project3Container768>
-      <hr id="hr3" />
+      <hr id="hr4" />
+
       <Project4Container768>
         <PDescription768>
           <span>Portfolio Web Responsive</span> con vista para{' '}
@@ -158,6 +212,12 @@ const Div = styled.div`
     }
 
     @media (min-width: 768px) {
+      #hr0 {
+        margin-top: 0px;
+      }
+      #hr01 {
+        margin-top: 0px;
+      }
       #hr1 {
         margin-top: 5px;
       }
@@ -167,9 +227,18 @@ const Div = styled.div`
       #hr3 {
         margin-top: 20px;
       }
+      #hr4 {
+        margin-top: 0px;
+      }
     }
 
     @media (min-width: 1700px) {
+      #hr0 {
+        margin-top: 0px;
+      }
+      #hr01 {
+        margin-top: -20px;
+      }
       #hr1 {
         margin-top: 5px;
       }
@@ -179,7 +248,36 @@ const Div = styled.div`
       #hr3 {
         margin-top: 20px;
       }
+      #hr4 {
+        margin-top: 0px;
+      }
     }
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const Project0Container768 = styled.div`
+  @media (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0px 10px;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const Project01Container768 = styled.div`
+  @media (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0px 10px;
   }
   @media (max-width: 768px) {
     display: none;
